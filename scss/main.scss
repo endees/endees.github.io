@@ -397,5 +397,147 @@ body {
         }
     }
 
+    .comments {
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        .item {
+                            .comments-wrapper {
+                                .comments-wrapper_head {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-bottom: -25px;
+                                    padding: 0 2rem 0 3rem;
+
+                                    h3 {
+                                        text-transform: uppercase;
+                                        font-weight: 700;
+                                    }
+                                    img {
+                                        max-width: 100px;
+                                        height: auto;
+                                        box-shadow: 3px 3px 0px $secondColor;
+                                    }
+                                }
+
+                                .comments-wrapper_content {
+                                    padding: 35px;
+                                    background-color: rgba($secondColor, .3);
+
+                                    p {
+                                        text-align: justify;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .owl-nav {
+                text-align: end;
+                padding: 0;
+
+                button {
+                    margin: 0;
+                    margin-left: .75rem;
+                    span {
+                        padding: .5rem 1rem;
+                        background-color: $secondColor;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .accordion {
+        padding: 0;
+        margin: 0;
+        .accordion-item {
+            border: none;
+            overflow: hidden;
+            border-radius: 0;
+            
+            
+            .accordion-item_header {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 0 0 0 25rem;
+                border-bottom: 1px solid rgba($fontColor, .2);
+
+                h3 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.5rem;
+                    line-height: 3.5rem;
+                }
+
+                button {
+                    text-align: start;
+                    padding: .5rem 1rem;
+                    border: none;
+                    background-color: lighten($secondColor, 0);
+                    transition: all .3s ease-in-out;
+                    border-radius: 0;
+                    position: relative;
+
+                    &::after {
+                        content: '\2b';
+                        display: block;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        transition: transform .3s ease-in;
+                        position: absolute;
+                        top: 20%;
+                        left: 1.5rem;
+
+                    }
+                    &.open::after {
+                        font-family: "Font Awesome 5 Free" !important;
+                        content: '\f00d' !important;
+                        font-weight: 900;
+                        position: absolute;
+                        // display: block;
+                        font-size: 1rem;
+                        line-height: 2rem;
+                        transform: rotate(270deg);
+                    }
+                    
+                    &:hover,
+                    &.open {
+                        width: 110%;
+                        margin-left: -10%;
+                        background-color: darken($secondColor, 10);
+
+                    }
+                }
+
+            }
+            .accordion-item_content {
+                padding: 0 1rem;
+                text-align: justify;
+                // display: none;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .5s ease-in-out;
+
+                p {
+                    padding: 2rem 0;
+                }
+                
+                &.open {
+                    // display: block;
+                    max-height: 100%;
+
+                }
+            }
+
+            
+        }
+    }
     
 }
