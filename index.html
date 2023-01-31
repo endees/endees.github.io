@@ -21,12 +21,12 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"><i class="fas fa-solid fa-bars"></i></button>
+                <div class="navbar-social">
+                    <a href="#" class="navbar-social_link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="navbar-social_link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="navbar-social_link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
                 <div class="navbar-container">
-                    <div class="navbar-social">
-                        <a href="#" class="navbar-social_link"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="navbar-social_link"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="navbar-social_link"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
@@ -39,7 +39,7 @@
         </nav>
         <div class="header-container container-fluid" style="background-image: url(img/header-img-2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="header-img_wrapper">
-                <div class="header-img_wrapper__box col-8">
+                <div class="header-img_wrapper__box col-10">
                     <h1>Sed sit amet purus vel turpis suscipit egestas</h1>
                     <p>Vivamus maximus augue eu felis pretium, nec cursus nunc ultrices. Proin felis enim, sagittis id dictum sit amet, auctor in risus.</p>
                     <a href="#" class="btn">show me more!</a>
@@ -134,77 +134,79 @@
         <span class="horizontal-spacer"></span>
 
         <div class="section-two_right">
-            <h2>
-                <span class="green">top </span>rated
-            </h2>
-
-            <div class="section-two_right__rated">
-                <a href="#">
-                    <div class="section-two_right__rated_wrapper">
-                        <div class="number">1</div>
-                        <div class="section-two_right__rated_wrapper_content">
-                            <h3>Proin scelerisque arcu in turpis euismod.</h3>
-                            <p class="views">7,453 views</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="section-two_right__rated_wrapper">
-                        <div class="number">2</div>
-                        <div class="section-two_right__rated_wrapper_content">
-                            <h3>Proin scelerisque arcu in turpis euismod.</h3>
-                            <p class="views">7,453 views</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="section-two_right__rated_wrapper">
-                        <div class="number">3</div>
-                        <div class="section-two_right__rated_wrapper_content">
-                            <h3>Proin scelerisque arcu in turpis euismod.</h3>
-                            <p class="views">7,453 views</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="section-two_right__socials">
-                <h3 class="social-title">We are on socials!</h3>
-                <div class="section-two_right__socials_wrapper">
-                    <a href="">
-                        <div class="section-two_right__socials_box" style="background-color: #88006A;">
-                            <i class="fa-brands fa-instagram"></i>
-                            <p>instagram</p>
+            <div class="section-two_right__sticky">
+                <h2>
+                    <span class="green">top </span>rated
+                </h2>
+    
+                <div class="section-two_right__rated">
+                    <a href="#">
+                        <div class="section-two_right__rated_wrapper">
+                            <div class="number">1</div>
+                            <div class="section-two_right__rated_wrapper_content">
+                                <h3>Proin scelerisque arcu in turpis euismod.</h3>
+                                <p class="views">7,453 views</p>
+                            </div>
                         </div>
                     </a>
-                        
-                    <a href="">
-                        <div class="section-two_right__socials_box" style="background-color: #001aff;">
-                            <i class="fa-brands fa-facebook"></i>
-                            <p>facebook</p>
+                    <a href="#">
+                        <div class="section-two_right__rated_wrapper">
+                            <div class="number">2</div>
+                            <div class="section-two_right__rated_wrapper_content">
+                                <h3>Proin scelerisque arcu in turpis euismod.</h3>
+                                <p class="views">7,453 views</p>
+                            </div>
                         </div>
                     </a>
-                    <a href="">
-                        <div class="section-two_right__socials_box" style="background-color: #009fcf;">
-                            <i class="fa-brands fa-twitter"></i>
-                            <p>twitter</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="section-two_right__socials_box" style="background-color: #cf0000;">
-                            <i class="fa-brands fa-youtube"></i>
-                            <p>youtube</p>
+                    <a href="#">
+                        <div class="section-two_right__rated_wrapper">
+                            <div class="number">3</div>
+                            <div class="section-two_right__rated_wrapper_content">
+                                <h3>Proin scelerisque arcu in turpis euismod.</h3>
+                                <p class="views">7,453 views</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-            </div>
-
-            <div class="section-two_right__neewsletter">
-                <h4><span class="green">Subscribe</span> to Updates!</h4>
-                <p>Stay informed with the latest news, design and business</p>
-
-                <input type="email" name="" id="" placeholder="Your email address">
-                <button class="btn">Subscribe</button>
+    
+                <div class="section-two_right__socials">
+                    <h3 class="social-title">We are on socials!</h3>
+                    <div class="section-two_right__socials_wrapper">
+                        <a href="">
+                            <div class="section-two_right__socials_box" style="background-color: #88006A;">
+                                <i class="fa-brands fa-instagram"></i>
+                                <p>instagram</p>
+                            </div>
+                        </a>
+                            
+                        <a href="">
+                            <div class="section-two_right__socials_box" style="background-color: #001aff;">
+                                <i class="fa-brands fa-facebook"></i>
+                                <p>facebook</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section-two_right__socials_box" style="background-color: #009fcf;">
+                                <i class="fa-brands fa-twitter"></i>
+                                <p>twitter</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section-two_right__socials_box" style="background-color: #cf0000;">
+                                <i class="fa-brands fa-youtube"></i>
+                                <p>youtube</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="section-two_right__neewsletter">
+                    <h4><span class="green">Subscribe</span> to Updates!</h4>
+                    <p>Stay informed with the latest news, design and business</p>
+    
+                    <input type="email" name="" id="" placeholder="Your email address">
+                    <button class="btn">Subscribe</button>
+                </div>
             </div>
 
         </div>
@@ -245,7 +247,7 @@
         </h2>
 
         <div class="comments-container">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="firstOwl">
                 <div class="item">
                     <div class="comments-wrapper">
                         <div class="comments-wrapper_head">
@@ -367,11 +369,94 @@
 
         <div class="services-container">
             <div class="services-container_box">
-
+                <div class="services-container_box__header">
+                    <h4>Web Design</h4>
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+                <div class="services-container_box__content">
+                    Phasellus ut pulvinar risus, vel iaculis libero. Aenean molestie odio a vulputate volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed euismod maximus volutpat.
+                </div>
+                <span class="services-container_box__separator"></span>
+                <div class="services-container_box__footer">
+                    <p>code</p>
+                    <p>design</p>
+                    <p>UI/UX design</p>
+                </div>
+            </div>
+            <div class="services-container_box">
+                <div class="services-container_box__header">
+                    <h4>Photography</h4>
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div class="services-container_box__content">
+                    Phasellus ut pulvinar risus, vel iaculis libero. Aenean molestie odio a vulputate volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed euismod maximus volutpat.
+                </div>
+                <span class="services-container_box__separator"></span>
+                <div class="services-container_box__footer">
+                    <p>code</p>
+                    <p>design</p>
+                    <p>UI/UX design</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="trusted">
+        <div class="container">
+            <h2>
+                <span class="green">they </span>trust us
+            </h2>
+        </div>
+
+        <div class="trusted-container container-fluid">
+            <div class="owl-carousel owl-theme" id="secondOwl">
+                <div class="item"><img src="img/trusted/Apple_logo_PNG1 1.png" alt="" class="img-fluid"></div>
+                <div class="item"><img src="img/trusted/Samsung_logo_PNG2 1.png" alt=""></div>
+                <div class="item"><img src="img/trusted/HyperX_logo_PNG2 1.png" alt=""></div>
+                <div class="item"><img src="img/trusted/nikePNG 1.png" alt=""></div>
+                <div class="item"><img src="img/trusted/HyperX_logo_PNG2 1.png" alt=""></div>
+                <div class="item"><img src="img/trusted/Playstation_logo_PNG1 1.png" alt=""></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="contact container-fluid">
+        <div class="container-contact">
+            <input type="text" name="" id="" placeholder="e-mail">
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <button>send message</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-container_logo">
+                <div class="footer-container_logo__photo">
+
+                </div>
+                <p>your logo here</p>
+            </div>
+            <div class="footer-container_contact">
+                <div class="footer-container_contact__socials">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="footer-container_contact__number">
+                    <a href="tel:+">+48 321 213 432</a>
+                </div>
+            </div>
+            <div class="footer-container_links">
+                <a href="">Privacy policy</a>
+                <a href="">Home</a>
+            </div>
+
+        </div>
+        <div class="author">Copyright © 2023 - ... | Created by Maciej Sławiński</div>
+    </footer>
 
 </body>
 </html>
